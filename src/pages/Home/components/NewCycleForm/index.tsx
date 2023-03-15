@@ -25,7 +25,7 @@ export function NewCycleForm() {
         <option value="Banana"></option>
       </datalist>
 
-      <label htmlFor="MinutesAmount">durante</label>
+      <label htmlFor="minutesAmount">durante</label>
       <MinutesAmountInput
         type="number"
         id="minutesAmount"
@@ -34,7 +34,7 @@ export function NewCycleForm() {
         min={5}
         max={60}
         disabled={!!activeCycle}
-        {...register('MinutesAmount', { valueAsNumber: true })}
+        {...register('minutesAmount', { valueAsNumber: true })}
       />
 
       <span>minutos.</span>
